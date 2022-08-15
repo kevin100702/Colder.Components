@@ -29,6 +29,7 @@ namespace Colder.MessageBus.MQTT
             var options = new MqttClientOptionsBuilder()
                 .WithClientId(Guid.NewGuid().ToString())
                 .WithTcpServer(host[0], int.Parse(host[1]))
+                .WithCredentials(Options.Username , Options.Password)
                 .Build();
 
             var factory = new MqttFactory();

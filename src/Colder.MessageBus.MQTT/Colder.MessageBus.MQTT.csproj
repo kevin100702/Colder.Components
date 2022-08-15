@@ -7,17 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Colder.MessageBus.Hosting" Version="1.2.50" />
     <PackageReference Include="MassTransit" Version="7.2.4" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
-    <PackageReference Include="MQTTnet" Version="3.0.16" />
+    <PackageReference Include="MQTTnet" Version="3.1.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Colder.Common\Colder.Common.csproj" />
-    <ProjectReference Include="..\Colder.MessageBus.Hosting\Colder.MessageBus.Hosting.csproj" />
   </ItemGroup>
 
 </Project>
